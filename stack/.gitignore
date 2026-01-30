@@ -1,0 +1,69 @@
+# =========================
+# Build directories
+# =========================
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.ninja
+.ninja_*
+
+# =========================
+# Executables
+# =========================
+*.exe
+*.out
+*.app
+
+# =========================
+# Object / temp files
+# =========================
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# =========================
+# Logs & generated files
+# =========================
+*.log
+CMakeConfigureLog.yaml
+TargetDirectories.txt
+rules.ninja
+.ninja_deps
+.ninja_log
+
+# =========================
+# IDEs
+# =========================
+
+# CLion / JetBrains
+.idea/
+cmake-build-debug/
+cmake-build-release/
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# =========================
+# OS specific
+# =========================
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# Linux
+*~
