@@ -1,0 +1,16 @@
+# Build directories
+build/
+cmake-build-*/
+
+# Executables
+*.exe
+
+# Object files
+*.o
+*.obj
+
+# Debug symbols
+*.pdb
+
+# CLion
+.idea/
