@@ -1,3 +1,4 @@
+using namespace ds::circular;
 
 template<typename T>
 void Queue<T>::alloc(size_t cap) {

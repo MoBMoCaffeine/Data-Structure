@@ -1,0 +1,54 @@
+# ==============================
+# Build directories
+# ==============================
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.ninja
+
+# ==============================
+# Executables
+# ==============================
+*.exe
+*.dll
+*.lib
+*.a
+
+# ==============================
+# Object and temporary files
+# ==============================
+*.o
+*.obj
+*.lo
+*.la
+*.lai
+*.slo
+*.pch
+*.idb
+*.pdb
+
+# ==============================
+# Debug symbols
+# ==============================
+*.dSYM/
+*.dSYM/*
+
+# ==============================
+# CLion / JetBrains IDE
+# ==============================
+.idea/
+*.iml
+cmake-build-*/
+
+# ==============================
+# Misc
+# ==============================
+*.log
+*.tmp
+*.swp
+*.bak
+*.user
+*.db

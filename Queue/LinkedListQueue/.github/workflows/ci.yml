@@ -1,0 +1,33 @@
+name: Build and Test DS Project
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build_and_test:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup MSYS2 (for MinGW compiler)
+        uses: msys2/setup-msys2@v2
+        with:
+          update: true
+          install: >
+            mingw-w64-x86_64-gcc
+            mingw-w64-x86_64-cmake
+            ninja
+
+      - name: Configure CMake
+        run: cmake -B build -S . -G "Ninja" -DCMAKE_BUILD_TYPE=Debug
+
+      - name: Build testLinkedListQueue
+        run: cmake --build build --target testLinkedListQueue --config Debug
+
+      - name: Run testLinkedListQueue
+        run: build\testLinkedListQueue.exe

@@ -9,6 +9,8 @@
 #include <cassert>
 #include <stdexcept>
 
+using namespace ds::circular;
+
 void test_enqueue_rear_front() {
     Queue<char> q(3);
     q.enqueue('a');
